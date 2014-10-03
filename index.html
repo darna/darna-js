@@ -2,7 +2,43 @@
   <head>
     <script src="lib/darna.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+      h1 {
+        font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 200px;
+        letter-spacing: -1px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="status">Teka.</h1>
   </body>
+  <script>
+
+    var maytaoba = function() {
+      Darna.configure({
+        authToken: '4b2d547ec08efb04fbf341bb947a7ae0',
+        project: 'cr'
+      });
+
+      Darna.retrieve('maytaoba', function(data) {
+        heading = document.getElementById('status')
+        console.log(data.maytaoba);
+        if(data.maytaoba === 'meron') {
+          heading.innerHTML = 'Meron.'
+        } else {
+          heading.innerHTML = 'Wala.'
+        }
+      });
+    };
+
+    maytaoba();
+
+    setInterval(maytaoba, 2000);
+  </script>
 </html>
