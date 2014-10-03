@@ -1,9 +1,23 @@
 {
   "name": "darna-js",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    
-  }
+  "version": "0.0.1",
+  "homepage": "https://github.com/darna/darna-js",
+  "authors": [
+    "Ken-Lauren Daganio <akosiken@gmail.com>"
+  ],
+  "description": "Official javascript interface to the Darna API",
+  "main": "lib/darna.js",
+  "keywords": [
+    "darna",
+    "api",
+    "official"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
-
