@@ -1,3 +1,6 @@
+/*! darna-js - v0.0.0 - 2014-10-03
+* http://www.youtube.com/watch?v=cDuG95DXbw8
+* Copyright (c) 2014 Ken-Lauren Daganio; Licensed  */
 // Uses AMD or browser globals to create a module.
 
 // Grabbed from https://github.com/umdjs/umd/blob/master/amdWeb.js.
